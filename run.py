@@ -44,7 +44,14 @@ def main():
     if not recs:
         recs.append("No issues detected on this crawl.")
     server.seo_recommend(recs)
-    server.RUN["model_calls"] = 0  # starter does no model calls; champion fixes will add some
+
+    # champion-tier fixes: model-driven title/meta rewrites + a redirect map.
+    # build_fixes never raises and never hangs — it falls back to deterministic
+    # output if the local model (Ollama/qwen) is unavailable, so the run stays safe.
+    from seo import fixer
+    fx = fixer.build_fixes(server.RUN["rows"], server.RUN["issues"])
+    server.seo_set_fixes(fx["titles"], fx["redirect_map"])
+    server.RUN["model_calls"] = fx["model_calls"]
     server.RUN["duration_sec"] = round(time.time() - t0, 1)
     server.seo_report()
     server.seo_export()
@@ -55,6 +62,17 @@ def main():
     print(f"Total issues : {s['total_issues']}  (High {s['by_severity'].get('High',0)} / "
           f"Medium {s['by_severity'].get('Medium',0)} / Low {s['by_severity'].get('Low',0)})")
     print("Wrote outputs/report.json and outputs/report.html")
+
+    # Keep the dashboard server alive so the populated results stay viewable;
+    # otherwise the daemon HTTP thread dies when this script exits. Hold the
+    # process open until the user interrupts (Ctrl+C).
+    if not args.no_dashboard:
+        print(f"\n[seo] dashboard live at http://localhost:{server.PORT}  (Ctrl+C to stop)", flush=True)
+        try:
+            while True:
+                time.sleep(1)
+        except KeyboardInterrupt:
+            print("\n[seo] dashboard stopped.", flush=True)
 
 
 if __name__ == "__main__":
