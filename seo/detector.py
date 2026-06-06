@@ -68,8 +68,10 @@ def detect(rows: list[dict]) -> list[dict]:
     dup_t = [u for urls in by_title.values() if len(urls) > 1 for u in urls]
     add("duplicate_title", "High", dup_t, "Pages sharing an identical title.")
 
+    # title_too_long: Pixel Width>561 OR Length>60. Rulebook adds no indexable/200
+    # qualifier, so scope is the text/html pre-filter only (not idx200).
     add("title_too_long", "Medium",
-        [r["Address"] for r in idx200
+        [r["Address"] for r in html
          if _int(r.get("Title 1 Pixel Width")) > 561 or _int(r.get("Title 1 Length")) > 60],
         "Titles likely truncated in search results.")
 
@@ -113,9 +115,9 @@ def detect(rows: list[dict]) -> list[dict]:
         [r["Address"] for r in idx200 if _int(r.get("Inlinks")) == 0],
         "Indexable pages with zero internal links in.")
 
-    # title_too_short: Length<30 and not empty, indexable 200 → Low
+    # title_too_short: Length<30 and not empty. No indexable/200 qualifier → html scope.
     add("title_too_short", "Low",
-        [r["Address"] for r in idx200
+        [r["Address"] for r in html
          if (r.get("Title 1", "") or "").strip() and _int(r.get("Title 1 Length")) < 30],
         "Titles shorter than 30 characters.")
 
@@ -124,9 +126,9 @@ def detect(rows: list[dict]) -> list[dict]:
         [r["Address"] for r in idx200 if not (r.get("Meta Description 1", "") or "").strip()],
         "Indexable pages with no meta description.")
 
-    # meta_description_too_long: Length>155 → Low
+    # meta_description_too_long: Length>155. No indexable/200 qualifier → html scope.
     add("meta_description_too_long", "Low",
-        [r["Address"] for r in idx200 if _int(r.get("Meta Description 1 Length")) > 155],
+        [r["Address"] for r in html if _int(r.get("Meta Description 1 Length")) > 155],
         "Meta descriptions likely truncated in search results.")
 
     # duplicate_meta_description: same Meta Description 1 on 2+ indexable → Medium

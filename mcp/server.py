@@ -94,13 +94,18 @@ def seo_report() -> dict:
     os.makedirs(OUT_DIR, exist_ok=True)
     p = os.path.join(OUT_DIR, "report.json")
     json.dump(_report_obj(), open(p, "w", encoding="utf-8"), indent=2)
-    RUN["status"] = "done"; _emit("saved", {"path": p}); return {"path": p}
+    # Persist in RUN so the connect-time snapshot can reconstruct the Run log for
+    # clients that load the dashboard after the run has already finished.
+    RUN["status"] = "done"; RUN["report_json"] = p
+    _emit("saved", {"path": p}); return {"path": p}
 
 
 def seo_export() -> dict:
     os.makedirs(OUT_DIR, exist_ok=True)
     p = os.path.join(OUT_DIR, "report.html")
     open(p, "w", encoding="utf-8").write(_render_html(_report_obj()))
+    # Persist so a late-connecting client's snapshot can show the Deliverable panel.
+    RUN["report_html"] = p
     _emit("exported", {"path": p}); return {"path": p}
 
 

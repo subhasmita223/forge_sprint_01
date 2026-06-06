@@ -66,6 +66,7 @@
         "https://nmgtechnologies.com/download-content-editorial-calendar",
         "https://nmgtechnologies.com/download-developmental-checklist",
         "https://nmgtechnologies.com/get-custom-pricing",
+        "https://nmgtechnologies.com/industry/edtech",
         "https://nmgtechnologies.com/industry/fintech",
         "https://nmgtechnologies.com/industry/healthcare",
         "https://nmgtechnologies.com/industry/marketresearch",
@@ -98,7 +99,7 @@
         "https://nmgtechnologies.com/success-stories/wealth-concert",
         "https://nmgtechnologies.com/work/ecommerce/"
       ],
-      "count": 63,
+      "count": 64,
       "explanation": "Titles likely truncated in search results."
     },
     {
@@ -154,9 +155,10 @@
         "https://nmgtechnologies.com/services/shopify",
         "https://nmgtechnologies.com/services/web-development",
         "https://nmgtechnologies.com/sitemap",
+        "https://nmgtechnologies.com/solution/internet-of-things/",
         "https://nmgtechnologies.com/wordpress-development"
       ],
-      "count": 21,
+      "count": 22,
       "explanation": "Titles shorter than 30 characters."
     },
     {
@@ -183,6 +185,7 @@
         "https://nmgtechnologies.com/company/promise/",
         "https://nmgtechnologies.com/download-content-editorial-calendar",
         "https://nmgtechnologies.com/get-custom-pricing",
+        "https://nmgtechnologies.com/industry/edtech",
         "https://nmgtechnologies.com/industry/healthcare",
         "https://nmgtechnologies.com/industry/marketresearch",
         "https://nmgtechnologies.com/industry/staffing",
@@ -206,7 +209,7 @@
         "https://nmgtechnologies.com/success-stories/international-insurance",
         "https://nmgtechnologies.com/success-stories/wealth-concert"
       ],
-      "count": 42,
+      "count": 43,
       "explanation": "Meta descriptions likely truncated in search results."
     },
     {
@@ -827,6 +830,13 @@
         "new_meta": "Share Project Requirements & Get Personalized Estimates"
       },
       {
+        "url": "https://nmgtechnologies.com/industry/edtech",
+        "old_title": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new_title": "Edtech",
+        "old_meta": "NMG Technologies is a leading IT outsourcing company with over 12 years of experience, 1000+ projects delivered, 500+Clients and a 100+ people team in-house. Get Started Today!",
+        "new_meta": "Edtech. Scalable and Innovative Education Technology Solutions"
+      },
+      {
         "url": "https://nmgtechnologies.com/industry/fintech",
         "old_title": "IT Outsource Software, Web & Mobile App Development Company - NMG",
         "new_title": "Fintech",
@@ -1065,6 +1075,13 @@
         "new_meta": "Fintech Software Development Company. Empower the Financial Ecosystem with fintech Software Development Services"
       },
       {
+        "url": "https://nmgtechnologies.com/solution/internet-of-things/",
+        "old_title": "Internet Of Things",
+        "new_title": "IoT Development",
+        "old_meta": "Transform your business with Custom IoT solutions tailored to your needs. Get a free consultation today!",
+        "new_meta": "IoT Development. End-To-End Custom IoT Development Solutions."
+      },
+      {
         "url": "https://nmgtechnologies.com/solution/portals/",
         "old_title": "Web Portal Development Services - Ecommerce Portal Apps for Business",
         "new_title": "Web Portal Development",
@@ -1157,7 +1174,7 @@
   "recommendations": [
     "Fix the 12 High-severity 'duplicate_title' issue(s) first.",
     "Fix the 6 High-severity 'broken_link' issue(s) first.",
-    "Fix the 63 Medium-severity 'title_too_long' issue(s) first.",
+    "Fix the 64 Medium-severity 'title_too_long' issue(s) first.",
     "Fix the 7 Medium-severity 'redirect' issue(s) first.",
     "Fix the 16 Medium-severity 'duplicate_meta_description' issue(s) first."
   ],
