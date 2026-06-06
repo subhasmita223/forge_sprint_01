@@ -1,0 +1,16 @@
+{
+  "name": "seo-command-center",
+  "version": "0.1.0",
+  "description": "Forge Sprint 01 starter. Ingests a Screaming Frog SEO export, audits it against the rulebook, prioritizes issues, writes fixes, and renders a live dashboard + client report.",
+  "author": "NMG Labs · Forge Sprint 01",
+  "license": "MIT",
+  "skills": ["./skills/seo-audit"],
+  "commands": ["./commands/seo-audit.md"],
+  "agents": ["./agents/ingest.md", "./agents/auditor.md", "./agents/fixer.md", "./agents/reporter.md"],
+  "mcpServers": {
+    "seo-command-center": {
+      "command": "python",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/server.py"]
+    }
+  }
+}

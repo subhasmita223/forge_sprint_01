@@ -1,0 +1,149 @@
+{
+  "site": "nmgtechnologies.com",
+  "urls_crawled": 456,
+  "summary": {
+    "total_issues": 4,
+    "by_severity": {
+      "High": 2,
+      "Medium": 2,
+      "Low": 0
+    }
+  },
+  "issues": [
+    {
+      "type": "duplicate_title",
+      "severity": "High",
+      "affected_urls": [
+        "https://nmgtechnologies.com/",
+        "https://nmgtechnologies.com/clients/case-studies/",
+        "https://nmgtechnologies.com/industry/fintech",
+        "https://nmgtechnologies.com/industry/healthcare",
+        "https://nmgtechnologies.com/industry/marketresearch",
+        "https://nmgtechnologies.com/industry/staffing",
+        "https://nmgtechnologies.com/industry/travel",
+        "https://nmgtechnologies.com/success-stories",
+        "https://nmgtechnologies.com/success-stories/competiscan",
+        "https://nmgtechnologies.com/success-stories/compound-banc",
+        "https://nmgtechnologies.com/success-stories/international-insurance",
+        "https://nmgtechnologies.com/success-stories/wealth-concert"
+      ],
+      "count": 12,
+      "explanation": "Pages sharing an identical title."
+    },
+    {
+      "type": "title_too_long",
+      "severity": "Medium",
+      "affected_urls": [
+        "https://nmgtechnologies.com/",
+        "https://nmgtechnologies.com/agentic-ai",
+        "https://nmgtechnologies.com/ai-driven-enterprise-software-development",
+        "https://nmgtechnologies.com/ai-enhanced-web-mobile-application-development",
+        "https://nmgtechnologies.com/ai-optimized-ecommerce-solutions",
+        "https://nmgtechnologies.com/ai-powered-business-process-transformation",
+        "https://nmgtechnologies.com/blog/advantages-of-asp-net-core",
+        "https://nmgtechnologies.com/blog/best-practices-offshore-software-development",
+        "https://nmgtechnologies.com/blog/how-to-build-an-app-like-uber",
+        "https://nmgtechnologies.com/blog/nmg-technologies-made-list-top-mobile-app-development-companies-goodfirms",
+        "https://nmgtechnologies.com/blog/nmg-technologies-participated-in-softwave-2023-the-republic-of-korea-software-exhibition",
+        "https://nmgtechnologies.com/blog/nmg-technologies-to-participate-in-leap-2023-tech-conference-in-riyadh-saudi-arabia",
+        "https://nmgtechnologies.com/blog/nmg-technologies-to-participate-in-mobile-word-capital-barcelona-the-worlds-largest-and-most-influential-connectivity-event",
+        "https://nmgtechnologies.com/blog/nmg-technologies-to-participate-in-retail-innovation-conference-and-expo-2023-in-chicago",
+        "https://nmgtechnologies.com/blog/nmg-technologies-to-sponsor-and-exhibit-at-brighton-seo-2023-and-online-pr-show-2023",
+        "https://nmgtechnologies.com/blog/nmg-to-participate-in-the-largest-tech-expo-in-the-middle-east-gitex-global-2022-dubai",
+        "https://nmgtechnologies.com/blog/nmg-to-participate-in-the-largest-tech-expo-in-the-middle-east-gitex-global-2023-dubai",
+        "https://nmgtechnologies.com/blog/sempo-hangouts-session-user-experience",
+        "https://nmgtechnologies.com/blog/top-wordpress-themes",
+        "https://nmgtechnologies.com/blog/ui-ux-mobile-app-development",
+        "https://nmgtechnologies.com/blog/wordpress-website-perfect-solution-small-business",
+        "https://nmgtechnologies.com/blog/working-from-home-during-the-coronavirus-lockdown",
+        "https://nmgtechnologies.com/clients/case-studies/",
+        "https://nmgtechnologies.com/company/about-us",
+        "https://nmgtechnologies.com/company/careers/",
+        "https://nmgtechnologies.com/company/outsourcing/",
+        "https://nmgtechnologies.com/company/process/",
+        "https://nmgtechnologies.com/company/promise/",
+        "https://nmgtechnologies.com/download-appdevelopmentcost-ebook",
+        "https://nmgtechnologies.com/download-content-editorial-calendar",
+        "https://nmgtechnologies.com/download-developmental-checklist",
+        "https://nmgtechnologies.com/get-custom-pricing",
+        "https://nmgtechnologies.com/industry/fintech",
+        "https://nmgtechnologies.com/industry/healthcare",
+        "https://nmgtechnologies.com/industry/marketresearch",
+        "https://nmgtechnologies.com/industry/staffing",
+        "https://nmgtechnologies.com/industry/travel",
+        "https://nmgtechnologies.com/resources/library/",
+        "https://nmgtechnologies.com/resources/library/hire-web-developers-guide",
+        "https://nmgtechnologies.com/services/custom-software-development/",
+        "https://nmgtechnologies.com/services/custom-software-development/aspnet-development/",
+        "https://nmgtechnologies.com/services/custom-software-development/php-development/",
+        "https://nmgtechnologies.com/services/custom-software-development/saas-development/",
+        "https://nmgtechnologies.com/services/ecommerce-development/",
+        "https://nmgtechnologies.com/services/it-consulting/",
+        "https://nmgtechnologies.com/services/mobile-application-development",
+        "https://nmgtechnologies.com/services/mobile-application-development/android-app-development",
+        "https://nmgtechnologies.com/services/mobile-application-development/ios-app-development/",
+        "https://nmgtechnologies.com/services/mobile-application-development/tablet-app-development/",
+        "https://nmgtechnologies.com/services/user-interface-design/",
+        "https://nmgtechnologies.com/services/user-interface-design/mobile-design/",
+        "https://nmgtechnologies.com/solution/artificial-intelligence/",
+        "https://nmgtechnologies.com/solution/augmented-reality/",
+        "https://nmgtechnologies.com/solution/blockchain",
+        "https://nmgtechnologies.com/solution/cloud-apps/",
+        "https://nmgtechnologies.com/solution/fintech/",
+        "https://nmgtechnologies.com/solution/portals/",
+        "https://nmgtechnologies.com/success-stories",
+        "https://nmgtechnologies.com/success-stories/competiscan",
+        "https://nmgtechnologies.com/success-stories/compound-banc",
+        "https://nmgtechnologies.com/success-stories/international-insurance",
+        "https://nmgtechnologies.com/success-stories/wealth-concert",
+        "https://nmgtechnologies.com/work/ecommerce/"
+      ],
+      "count": 63,
+      "explanation": "Titles likely truncated in search results."
+    },
+    {
+      "type": "broken_link",
+      "severity": "High",
+      "affected_urls": [
+        "https://nmgtechnologies.com/hs-fs/hubfs/B-W_icon.png.png?width=101&height=100&name=B-W_icon.png.png",
+        "https://nmgtechnologies.com/hs-fs/hubfs/edtech.png.png?width=101&height=100&name=edtech.png.png",
+        "https://nmgtechnologies.com/hs-fs/hubfs/fintech.png.png?width=101&height=100&name=fintech.png.png",
+        "https://nmgtechnologies.com/hs-fs/hubfs/fintechgrey.png?width=122&height=80&name=fintechgrey.png",
+        "https://nmgtechnologies.com/hs-fs/hubfs/glob.png.png?width=101&height=100&name=glob.png.png",
+        "https://nmgtechnologies.com/hs-fs/hubfs/healthgrey.png?width=105&height=90&name=healthgrey.png"
+      ],
+      "count": 6,
+      "explanation": "URLs returning a client error (4xx)."
+    },
+    {
+      "type": "redirect",
+      "severity": "Medium",
+      "affected_urls": [
+        "https://nmgtechnologies.com/company/about-us/",
+        "https://nmgtechnologies.com/compound-banc",
+        "https://nmgtechnologies.com/services/mobile-application-development/",
+        "https://nmgtechnologies.com/services/mobile-application-development/android-app-development/",
+        "https://nmgtechnologies.com/services/user-interface-design/mobile-versions/",
+        "https://nmgtechnologies.com/solution/blockchain/",
+        "https://nmgtechnologies.com/work/design/"
+      ],
+      "count": 7,
+      "explanation": "URLs that redirect (3xx)."
+    }
+  ],
+  "fixes": {
+    "titles": [],
+    "redirect_map": []
+  },
+  "recommendations": [
+    "Fix the 12 High-severity 'duplicate_title' issue(s) first.",
+    "Fix the 6 High-severity 'broken_link' issue(s) first.",
+    "Fix the 63 Medium-severity 'title_too_long' issue(s) first.",
+    "Fix the 7 Medium-severity 'redirect' issue(s) first."
+  ],
+  "run_meta": {
+    "model": "qwen3.5:9b",
+    "model_calls": 0,
+    "duration_sec": 0.1
+  }
+}

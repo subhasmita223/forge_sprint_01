@@ -1,0 +1,22 @@
+{
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [ { "type": "command", "command": "HOOK_EVENT=SessionStart bash .claude/hooks/audit.sh", "async": true } ] }
+    ],
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "HOOK_EVENT=UserPromptSubmit bash .claude/hooks/audit.sh", "async": true } ] }
+    ],
+    "PreToolUse": [
+      { "matcher": ".*", "hooks": [ { "type": "command", "command": "HOOK_EVENT=PreToolUse bash .claude/hooks/audit.sh", "async": true } ] }
+    ],
+    "PostToolUse": [
+      { "matcher": ".*", "hooks": [ { "type": "command", "command": "HOOK_EVENT=PostToolUse bash .claude/hooks/audit.sh", "async": true } ] }
+    ],
+    "SubagentStop": [
+      { "hooks": [ { "type": "command", "command": "HOOK_EVENT=SubagentStop bash .claude/hooks/audit.sh", "async": true } ] }
+    ],
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "HOOK_EVENT=Stop bash .claude/hooks/audit.sh", "async": true } ] }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SEO Command Center — Live Cockpit</title>
+<style>
+:root{--ink:#1a1a1f;--card:#242428;--line:#3a3a42;--paper:#f8f7f4;--mute:#c8c5be;--red:#FF0000}
+*{box-sizing:border-box}body{margin:0;background:var(--ink);color:var(--paper);font-family:Inter,system-ui,sans-serif}
+header{padding:16px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+h1{font-size:17px;margin:0}h1 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);margin-right:8px;animation:p 1.6s infinite}
+@keyframes p{0%,100%{opacity:1}50%{opacity:.4}}
+.pill{font-size:12px;color:var(--mute);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:18px 22px}@media(max-width:820px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.card h2{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--mute);margin:0 0 12px}
+.k{display:flex;gap:22px;flex-wrap:wrap}.k div{font-size:12px;color:var(--mute)}.k b{display:block;font-size:26px;color:var(--paper)}
+table{width:100%;border-collapse:collapse;font-size:12.5px}th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line)}
+th{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.sev{font-size:10px;font-weight:700;padding:2px 7px;border-radius:999px}.sev.high{background:var(--red);color:#fff}
+.sev.medium{background:#e2b53e;color:#1a1a1f}.sev.low{background:var(--line);color:var(--mute)}
+#log{max-height:280px;overflow:auto;font-size:12.5px}#log div{margin:5px 0;color:var(--mute)}
+.empty{color:var(--mute);font-size:13px}
+</style></head><body>
+<header><h1><span class="dot"></span>SEO Command Center <span class="pill" id="meta">idle</span></h1>
+<div class="pill" id="urls">0 URLs</div></header>
+<div class="grid">
+ <div>
+  <div class="card k" id="counts"><div><b id="c-total">0</b>issues</div><div><b id="c-high" style="color:var(--red)">0</b>high</div>
+   <div><b id="c-med" style="color:#e2b53e">0</b>medium</div><div><b id="c-low">0</b>low</div></div>
+  <div class="card" style="margin-top:16px"><h2>Issues found (live)</h2>
+   <div style="overflow-x:auto"><table id="tbl"><thead><tr><th>Severity</th><th>Issue</th><th>URLs</th></tr></thead>
+   <tbody id="tbody"><tr><td colspan="3" class="empty">Waiting for the audit to run…</td></tr></tbody></table></div></div>
+ </div>
+ <div>
+  <div class="card"><h2>Run log</h2><div id="log"><div class="empty">Pipeline steps stream here.</div></div></div>
+  <div class="card" style="margin-top:16px"><h2>Deliverable</h2><div id="export" class="empty">report.html will be ready when the run finishes.</div></div>
+ </div>
+</div>
+<script src="/app.js"></script></body></html>
